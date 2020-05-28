@@ -1,0 +1,19 @@
+.template{
+    background-image: url('https://gfggiza.github.io/ondeTemCorona/onde-tem-coronavirus-template.png');
+}
+
+ul.top-links li{
+color:white;
+font-family: 'Rubik', sans-serif;
+font-size: 16px;
+cursor: pointer;
+}
+ul.top-links li:hover{
+    color:#F47A62;
+    border-top:2px solid #F45F37;
+    border-top-width:0px 10px;
+}
+
+.dados-icon{
+    background-image: url('https://gfggiza.github.io/ondeTemCorona/dados-icon.png');
+}
