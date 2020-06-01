@@ -6,3 +6,4 @@ function AbrirMenu(){
 function FecharMenu(){
     document.getElementById("menu-list").style.display = "none";
 }
+

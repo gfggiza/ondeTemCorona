@@ -4,7 +4,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
+    /* body{
+        overflow: hidden;
+    } */
     /* telas maiores: */
     .template {
         background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-template.png);
@@ -13,6 +15,8 @@ body {
         height: 100vh;
         padding: 0px !important;
         margin: 0px !important;
+        position: relative;
+        z-index: 5;
     }
 
     .logo-principal {
@@ -62,19 +66,40 @@ body {
     .div-btns {
         position: absolute;
         text-align: center;
-        top: 35%;
+        top: 30%;
         right: 20%;
         width: fit-content;
     }
 
     .btn-painel {
-        font-size: 25px;
-        padding: 35px 65px;
+        font-size: 23px;
+        padding: 33px 60px;
     }
 
     .btn-dados {
         font-size: 16px;
         padding: 19px 30px;
+    }
+
+    .div-noticias{
+        position: absolute;
+        width: 100vw;
+        bottom: 0px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        background: #CECECE;
+        color:white;
+        font-weight: 600;
+        z-index:3;
+        bottom: 0px;
+        width: 100vw;
+    }
+    .div-carousel{
+        background: #F0F0F0;
+        height: 220px;
+        position: relative;
+        bottom: 0px;
+        z-index: 4;
     }
 }
 
@@ -85,7 +110,7 @@ body {
         background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-template.png);
         background-repeat: no-repeat;
         background-size: 180vw;
-        height: 100vh;
+        height: 90vh;
         padding: 0px !important;
         margin: 0px !important;
     }
@@ -161,7 +186,30 @@ body {
         font-size: 13px;
         padding: 15px 25px;
     }
+
+    .div-noticias{
+        position: relative;
+        width: 100vw;
+        bottom: 0px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        background: #CECECE;
+        height: 350px;
+        color:white;
+        font-weight: 600;
+        z-index:3;
+        bottom: 0px;
+    }
+    .div-carousel{
+        background: #F0F0F0;
+        height: 300px;
+        position: relative;
+        margin: 0px;
+        bottom: 0px;
+        z-index: 4;
+    }
 }
+
 
 
 .div-100 {
