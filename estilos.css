@@ -1,19 +1,231 @@
-.template{
-    background-image: url('https://gfggiza.github.io/ondeTemCorona/onde-tem-coronavirus-template.png');
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-ul.top-links li{
-color:white;
-font-family: 'Rubik', sans-serif;
-font-size: 16px;
-cursor: pointer;
-}
-ul.top-links li:hover{
-    color:#F47A62;
-    border-top:2px solid #F45F37;
-    border-top-width:0px 10px;
+@media only screen and (min-width: 768px) {
+
+    /* telas maiores: */
+    .template {
+        background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-template.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100vh;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .logo-principal {
+        height: auto;
+        width: auto;
+        margin: 30px;
+        margin-top: 40px;
+        float: left;
+    }
+
+    ul#horizontal-list {
+        list-style: none;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100vw;
+        position: relative;
+        right: 0px;
+    }
+
+    ul#horizontal-list li {
+        display: inline;
+    }
+
+    ul.top-links li {
+        position: relative;
+        top: 40px;
+        padding: 0px;
+        margin: 0px 30px;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        font-weight: 600;
+        padding-top: 14px;
+    }
+
+
+    .menu-icon {
+        display: none;
+    }
+
+    .close-btn {
+        display: none
+    }
+
+    .div-btns {
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        right: 20%;
+        width: fit-content;
+    }
+
+    .btn-painel {
+        font-size: 25px;
+        padding: 35px 65px;
+    }
+
+    .btn-dados {
+        font-size: 16px;
+        padding: 19px 30px;
+    }
 }
 
-.dados-icon{
-    background-image: url('https://gfggiza.github.io/ondeTemCorona/dados-icon.png');
+@media only screen and (max-width: 768px) {
+
+    /* celulares: */
+    .template {
+        background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-template.png);
+        background-repeat: no-repeat;
+        background-size: 180vw;
+        height: 100vh;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .logo-principal {
+        height: auto;
+        width: 200px;
+        margin: 30px;
+        float: left;
+    }
+
+    .menu-box {
+        display: none;
+        background: linear-gradient(to right, #c1fdb0, #0f8b96);
+        position: relative;
+        z-index: 10;
+        height: 100vh;
+    }
+
+    ul#horizontal-list {
+        position: absolute;
+        left: 50%;
+        padding: 0px;
+        transform: translateX(-50%);
+    }
+
+    ul.top-links li {
+        position: relative;
+        padding: 30px 40px;
+        margin-top: 20px;
+        background: #ffffff38;
+        text-align: center;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        list-style-type: none;
+    }
+
+    .menu-icon {
+        display: block;
+        float: right;
+        font-size: 30px;
+        margin: 25px;
+        color: #545554;
+    }
+
+    .close-btn {
+        display: block;
+        float: right;
+        font-size: 30px;
+        margin: 25px;
+        color: #545554;
+        z-index: 11;
+    }
+
+    .div-btns {
+        position: absolute;
+        text-align: center;
+        top: 55%;
+        left: 50%;
+        transform: translatex(-50%);
+        width: fit-content;
+    }
+
+    .btn-painel {
+        font-size: 20px;
+        padding: 25px 55px;
+    }
+
+    .btn-dados {
+        font-size: 13px;
+        padding: 15px 25px;
+    }
+}
+
+
+.div-100 {
+    width: 100%;
+}
+
+
+ul.top-links li:hover {
+    color: #F47A62;
+    border-top: 3px solid #F45F37;
+    border-top-width: 2px;
+
+}
+
+
+.btn-painel {
+    border-radius: 25px !important;
+    background-image: linear-gradient(to left, #E7B157 10%, #E05951 75%) !important;
+    font-family: 'Rubik', sans-serif;
+    color: #fff !important;
+    display: inline-block;
+    font-weight: 630;
+    border: 0;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    position: relative;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.btn-painel:hover {
+    transition: 1.2s;
+    filter: brightness(75%);
+}
+
+.btn-dados {
+    border-radius: 25px !important;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 630;
+    color: #F45F37;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #E05951, #E7B157);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    cursor: pointer;
+}
+
+.btn-dados:hover {
+    box-shadow: none;
+    transition: 0.8s;
+    filter: brightness(75%);
+    color: white;
+}
+
+.dados-icon {
+    vertical-align: middle;
+    background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/dados-icon.png);
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    height: 30px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
 }

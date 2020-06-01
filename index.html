@@ -6,37 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onde tem coronavírus</title>
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+
+    <!-- importados -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-a11y="true"></script>
+	<!-- importados -->
 </head>
 
 <body>
 
     <div class="template">
         <div class="top-hyperlinks">
-            <ul style="display:inline!important;" class="top-links">
-                <li>
-                    INÍCIO
-                </li>
-                <li>
-                    SOBRE NÓS
-                </li>
-                <li>
-                    COVID19
-                </li>
-                <li>
-                    NOTÍCIAS
-                </li>
-                <li>
-                    CONTATO
-                </li>
-                <li>
-                    PAINEL
-                </li>
-            </ul>
+                <img class="logo-principal" src="https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-logo.png" alt="logo-onde-tem-corona-virus">
+       
+            <div id="menu-list" class="menu-box div-100">
+                <i class="close-btn fas fa-times" onclick="FecharMenu()"></i>
+                    <ul id="horizontal-list" class="top-links" style="text-align: center;">
+                        <li>
+                            INÍCIO
+                        </li>
+                        <li>
+                            SOBRE NÓS
+                        </li>
+                        <li>
+                            COVID19
+                        </li>
+                        <li>
+                            NOTÍCIAS
+                        </li>
+                        <li>
+                            CONTATO
+                        </li>
+                        <li>
+                            PAINEL
+                        </li>
+                    </ul>
+            </div>
+            <i class="menu-icon fas fa-bars" onclick="AbrirMenu()"></i>
+    </div>
 
+        <div class="div-100">
+            <div class="div-btns">
+                <button class="btn-painel">ACESSO AO PAINEL</button><br><br><br><br>
+                <button class="btn-dados">
+                    DADOS E ANÁLISES
+                    <span class="dados-icon"></span></button>
+            </div>
         </div>
-        <button class="btn-painel">PAINEL</button><br><br>
-        <button class="btn-dados">DADOS E ANÁLISES<span class="dados-icon"></span></button>
+
     </div>
 
 </body>
