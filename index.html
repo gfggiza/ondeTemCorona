@@ -216,7 +216,6 @@
     display: inline-block;
     right:0px;
 }
-
 }
 
 
@@ -299,6 +298,14 @@ ul.top-links li a:hover {
     color: white;
     font-family: "Roboto", Roboto;
 }
+.font-text{
+    position: absolute;
+    top: -18px;
+    font-size: 13px;
+    font-family: Roboto;
+    color: #8a8a8a;
+    right: 0px;
+}
 .subtit{
     padding-top:20px;
     font-size:17px;
@@ -376,6 +383,9 @@ ul.top-links li a:hover {
             
         </div>
                 <section class="contadores">
+                    <span class="font-text">
+                        Fonte: Secretarias Estaduais de Saúde. Tratado por Brasil.io
+                    </span>
                     <div class="contador2">
                         <div class="subtit">
                             Número de Infectados
@@ -441,6 +451,11 @@ function getJson(data) {
         }
     });
 });
+
+function numberWithCommas(obitos,confirmados) {
+    return obitos.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return confirmados.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
 
 };
 
