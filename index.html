@@ -21,17 +21,44 @@
     padding: 0px;
 }
 
+.lang-icons-box{
+    background: #ffffffb3;
+    width: fit-content;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    z-index: 15;
+}
+.lang-icons{
+cursor: pointer;
+text-decoration: none;
+}
+.lang-icons-img{
+    width: 30px;
+}
+
+.contadores{
+    z-index: 1;
+    text-align: right;
+    width: 100%;
+    color: white;
+    font-family: "Roboto", Roboto;
+}
 
 @media only screen and (min-width: 768px) {
+    /* computador */
+
     .template {
-        background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-template.png);
+        background-image: url(https://ondetemcoronavirus.com.br/wp-content/uploads/2020/09/onde-tem-coronavirus-template-1024x516.png);
         background-repeat: no-repeat;
         background-size: 100%;
         height: 100vh;
         padding: 0px !important;
         margin: 0px !important;
         position: relative;
-        z-index: 5;
+        z-index: 0;
     }
 
     .logo-principal {
@@ -68,7 +95,6 @@
         padding-top: 14px;
     }
 
-
     .menu-icon {
         display: none;
     }
@@ -95,11 +121,26 @@
         padding: 19px 30px;
     }
 
+    .logoufabc{
+    margin-right: 20px;
+    width: 210px;
+    position: absolute;
+    left: 20px;
+    padding: 10px;
+    background: #ffffff8a;
+    border-radius: 10px!important;
+    }
+    .contadores{
+        position: absolute;
+        bottom:0px;
+    }
+
     .contador2{
     background: rgb(224, 94, 81);
     height: 100px;
     width:25%;
     display: inline-block;
+    border-top-left-radius: 30px;
 }
 .contador3{
     background: rgb(229, 150, 86);
@@ -117,7 +158,8 @@
 }
     /* celulares: */
     .template {
-        background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-template.png);
+        background-image: url(https://ondetemcoronavirus.com.br/wp-content/uploads/2020/09/onde-tem-coronavirus-template-1024x516.png);
+        background-color: white;
         background-repeat: no-repeat;
         background-size: 180vw;
         height: 90vh;
@@ -187,7 +229,7 @@
     .div-btns {
         position: absolute;
         text-align: center;
-        top: 50%;
+        top: 35vh;
         left: 50%;
         transform: translatex(-50%);
         width: fit-content;
@@ -202,7 +244,17 @@
         font-size: 13px;
         padding: 15px 25px;
     }
-    
+
+    .logoufabc{
+    margin-right: 20px;
+    width: 210px;
+    position: relative;
+    padding: 10px;
+    }
+    .contadores{
+        position: absolute;
+        bottom:15px!important;
+    }
     .contador2{
     background: rgb(224, 94, 81);
     height: 100px;
@@ -215,6 +267,9 @@
     width:100%;
     display: inline-block;
     right:0px;
+}
+.hide-mobile{
+    display: none;
 }
 }
 
@@ -278,7 +333,7 @@ ul.top-links li a:hover {
 
 .dados-icon {
     vertical-align: middle;
-    background-image: url(https://gfggiza.github.io/ondeTemCorona/imgs/dados-icon.png);
+    background-image: url(https://ondetemcoronavirus.com.br/wp-content/uploads/2020/09/dados-icon.png);
     background-repeat: no-repeat;
     background-size: 40px 30px;
     height: 30px;
@@ -288,16 +343,7 @@ ul.top-links li a:hover {
     top: -5px;
 }
 
-.contadores{
-    position: absolute;
-    z-index: 1;
-    bottom: 0px;
-    background: rgb(224, 94, 81);
-    text-align: right;
-    width: 100%;
-    color: white;
-    font-family: "Roboto", Roboto;
-}
+
 .font-text{
     position: absolute;
     top: -18px;
@@ -308,7 +354,7 @@ ul.top-links li a:hover {
     margin-right: 10px;
 }
 .subtit{
-    padding-top:20px;
+    padding-top:12px;
     font-size:17px;
     text-align: center;
 }
@@ -322,9 +368,18 @@ ul.top-links li a:hover {
 <body>
 
     <div class="template">
+        <div class="lang-icons-box hide-mobile">
+            <a class="lang-icons" href="https://ondetemcoronavirus.com.br/">
+                <img class="lang-icons-img" src="https://ondetemcoronavirus.com.br/wp-content/uploads/2020/09/brasil.png" alt="portugues">
+            </a>
+            <a class="lang-icons" href="https://ondetemcoronavirus.com.br/en/">
+                <img class="lang-icons-img" src="https://ondetemcoronavirus.com.br/wp-content/uploads/2020/09/estados-unidos.png" alt="inglês">
+            </a>
+
+        </div>
         <div class="top-hyperlinks">
                  <a href="https://ondetemcoronavirus.com.br/" style="text-decoration: none;">
-                <img class="logo-principal" src="https://gfggiza.github.io/ondeTemCorona/imgs/onde-tem-coronavirus-logo.png" alt="logo-onde-tem-corona-virus">
+                <img class="logo-principal" src="https://ondetemcoronavirus.com.br/wp-content/uploads/2020/06/onde-tem-coronavirus-logo.png" alt="logo-onde-tem-corona-virus">
             </a>
        
             <div id="menu-list" class="menu-box div-100">
@@ -356,7 +411,7 @@ ul.top-links li a:hover {
                             </a>
                         </li>
                         <li>
-                            <a href="https://painel.ondetemcoronavirus.com.br/">
+                            <a href="https://ondetemcoronavirus.ufabc.edu.br/painel/">
                                 PAINEL
                             </a>
                         </li>
@@ -368,23 +423,29 @@ ul.top-links li a:hover {
                     </ul>
             </div>
             <i class="menu-icon fas fa-bars" onclick="AbrirMenu()"></i>
-    </div>
+        </div>
 
         <div class="div-100">
             <div class="div-btns">
-                <a class="btn-painel"  href="https://painel.ondetemcoronavirus.com.br/">
-                    ACESSO AO PAINEL</a><br><br><br><br>
-                    <a  href="https://ondetemcoronavirus.com.br/mapa-de-distribuicao-dos-leitos-de-uti-adulto-sus-e-nao-sus-nos-municipios-brasileiros/">
-                        <button class="btn-dados">
+                <a class="btn-painel"  href="https://ondetemcoronavirus.ufabc.edu.br/painel/">
+                    ACESSO AO PAINEL</a>
+                    <div class="hide-mobile">
+                        <br>
+                    </div>
+                    <a  href="https://ondetemcoronavirus.com.br/noticias/">
+                        <button class="btn-dados hide-mobile">
                             DADOS E ANÁLISES
                             <span class="dados-icon"></span></button>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
             </div>
             
-        </div>
+    </div>
                 <section class="contadores">
-                    <span class="font-text">
+                    <span style="width: 100%;">
+                        <img class="logoufabc" src="https://ondetemcoronavirus.com.br/wp-content/uploads/2020/09/logo-ufabc-1-1.png" alt="logo-ufabc">
+                    </span>
+                    <span class="font-text hide-mobile">
                         Fonte: Secretarias Estaduais de Saúde. Tratado por Brasil.io
                     </span>
                     <div class="contador2">
@@ -402,7 +463,6 @@ ul.top-links li a:hover {
                         </div>
                     </div>
                 </section>
-    </div>
 
             <script>
                 function AbrirMenu(){
@@ -414,7 +474,7 @@ function FecharMenu(){
 
 
 // funcao obter dados brasil.io
-var rootUrl = 'https://geoserver.ondetemcoronavirus.com.br/geoserver/ows';
+var rootUrl = 'https://ondetemcoronavirus.ufabc.edu.br/geoserver/ows';
 
 var defaultParameters = {
   service: 'WFS',
